@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import CartSummary from '../CartSummary';
+import CartSummary from './CartSummary';
 
 const Navi = (props) => {
   const [isOpen, setIsOpen] = useState(false);
