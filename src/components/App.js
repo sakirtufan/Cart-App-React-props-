@@ -8,6 +8,8 @@ import alertify from "alertifyjs";
 import { Route, Switch } from 'react-router-dom';
 import NotFound from './NotFound';
 import CartList from './CartList';
+import Form1 from './Form1';
+import Form2 from './Form2';
 
 
 export default class App extends Component {
@@ -88,10 +90,10 @@ export default class App extends Component {
                     removeFromCart={this.removeFromCart} />
                 )
                 } />
+                <Route path="/form1" component={Form1} />
+                <Route path="/form2" component={Form2} />
                 <Route component={NotFound} />
               </Switch>
-
-
             </Col>
           </Row>
         </Container>
